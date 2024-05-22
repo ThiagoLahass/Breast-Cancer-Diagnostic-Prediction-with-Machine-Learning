@@ -1,45 +1,34 @@
 # Breast Cancer Diagnostic
 
-The idea of this mini-project is to apply data processing, apply some algorithm models and compare the metrics of each one, and then choose which one has the best performance.
+The goal of this project is to develop a breast cancer diagnostic system by applying data processing techniques and comparing the performance of different machine learning models. The dataset used for this project is the [Breast Cancer Wisconsin (Diagnostic)](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic).
 
-The dataset can be found in [Breast Cancer Wisconsin (Diagnostic)](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic).
+## Overview:
+In this project, we follow several key steps:
 
-## Steps:
-1. **Prepare data for use**
-    - Read
-    - Clean
-    - Separate
-2. **Plot information to gain insights**
-3. **Train a model**
-4. **Check the results**
+1. **Data Preparation**
+    - Load the dataset
+    - Clean the data
+    - Separate features and target variable
+2. **Exploratory Data Analysis**
+    - Visualize data to gain insights
+    - Analyze correlations between features
+3. **Data Preprocessing**
+    - Encode categorical variables
+    - Normalize continuous features
+    - Balance the dataset using SMOTE
+4. **Model Training**
+    - Apply various machine learning algorithms:
+        - `K-Nearest Neighbors (KNN)`
+        - `Decision Tree`
+        - `Support Vector Classifier (SVC)`
+        - `Multinomial Naive Bayes`
+        - `Gaussian Naive Bayes`
+    - Evaluate each model using cross-validation and metrics like accuracy, AUC score, precision, recall, and F1-score
+5. **Results and Model Selection**
+    - Compare the performance of all models
+    - Select the best-performing model based on key metrics
 
-## Data Preparation
-- Loaded the data and verified no empty values.
-- Coded the diagnosis column: Malignant = 1, Benign = 0.
-- Normalized the continuous values.
-
-## Data Exploration
-- Checked dataset balance and found it partially balanced.
-- Analyzed the correlation between attributes using a heatmap.
-
-## Data Splitting
-- Used SMOTE to balance the dataset.
-- Split the data into training and testing sets.
-
-## Machine Learning Models Applied
-### KNeighborsClassifier
-- Applied K-Nearest Neighbors with cross-validation.
-- Evaluated the model with accuracy, AUC score, and confusion matrix.
-
-### DecisionTreeClassifier
-- Applied Decision Tree Classifier with cross-validation.
-- Evaluated the model with accuracy, AUC score, and confusion matrix.
-
-## Results
-- Compared the accuracy and AUC scores of both models.
-- Plotted the ROC curves and confusion matrices to visualize performance.
-
-## How to Use This Repository
+## Getting Started
 
 ### Prerequisites
 Make sure you have Python installed. You can download it from [python.org](https://www.python.org/).
@@ -68,9 +57,22 @@ Make sure you have Python installed. You can download it from [python.org](https
 
 ### Running the Project
 
-1. Ensure you have the dataset file `wdbc.data` in a `data` directory within the project.
+1. Ensure you have the dataset file `wdbc.data` in the `data` directory.
 
-2. Run the cells
+2. Run the project by executing the cells in the Jupyter Notebook or Python script.
+
+## Results and Model Selection
+After training and evaluating multiple machine learning models, including `KNN`, `Decision Tree`, `SVC`, `Multinomial NB`, and `Gaussian NB`, we compared their performance based on key metrics:
+
+- Accuracy
+- AUC Score
+- Precision
+- Recall
+- F1-Score
+
+We selected the best model based on `recall`, which is *crucial* for *cancer diagnosis* to *minimize false negatives*. The selected model demonstrated robust performance across multiple metrics, ensuring accurate and reliable predictions for early breast cancer detection and effective treatment.
+
+For a detailed analysis and comparison of models, refer to the Jupyter Notebook or Python script in this repository.
 
 ## Dependencies
 
@@ -80,4 +82,4 @@ Make sure you have Python installed. You can download it from [python.org](https
 - scikit-learn
 - imbalanced-learn
 
-If you enjoyed the content of this project, please give it a star!
+If you enjoyed the content of this project or find it helpful, please give it a star!
