@@ -72,14 +72,21 @@ After training and evaluating multiple machine learning models, including `KNN`,
 
 We selected the best model based on `recall`, which is *crucial* for *cancer diagnosis* to *minimize false negatives*. The selected model demonstrated robust performance across multiple metrics, ensuring accurate and reliable predictions for early breast cancer detection and effective treatment.
 
+We can compare the *confusion matrix* of all the models:
+![Confusion Matrix](/img/confusion-matrices.png)
+
+The best model based on *Recall* for this problem is `SVC` with an *AUC* of 1.00, *Accuracy* of 97.37%, *Precision* of 97.62%, *Recall* of 95.35%, and *F1-Score* of 96.47%.
+
+After evaluating the models `KNN`, `Decision Tree`, `SVC`, `Multinomial NB`, `Gaussian NB`, we concluded that the `SVC` model demonstrates the best performance in terms of *Recall*, which is crucial for cancer diagnosis. **High recall** ensures that we **minimize the false negatives**, thereby **reducing the risk of missing out on identifying patients who have cancer**.
+
 For a detailed analysis and comparison of models, refer to the Jupyter Notebook or Python script in this repository.
 
 ## Dependencies
 
-- pandas
-- seaborn
-- matplotlib
-- scikit-learn
-- imbalanced-learn
+- `pandas`
+- `seaborn`
+- `matplotlib`
+- `scikit-learn`
+- `imbalanced-learn`
 
 If you enjoyed the content of this project or find it helpful, please give it a star!
