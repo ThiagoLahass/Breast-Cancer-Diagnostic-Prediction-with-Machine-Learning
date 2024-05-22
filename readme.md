@@ -37,7 +37,7 @@ Make sure you have Python installed. You can download it from [python.org](https
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/ThiagoLahass/Breast-Cancer-Diagnostic.git
+    git clone https://github.com/ThiagoLahass/Breast-Cancer-Diagnostic-Prediction-with-Machine-Learning.git
     cd Breast-Cancer-Diagnostic
     ```
 
