@@ -23,6 +23,7 @@ In this project, we follow several key steps:
         - `Support Vector Classifier (SVC)`
         - `Multinomial Naive Bayes`
         - `Gaussian Naive Bayes`
+        - `XGBoost`
     - Evaluate each model using cross-validation and metrics like accuracy, AUC score, precision, recall, and F1-score
 5. **Results and Model Selection**
     - Compare the performance of all models
@@ -62,7 +63,7 @@ Make sure you have Python installed. You can download it from [python.org](https
 2. Run the project by executing the cells in the Jupyter Notebook or Python script.
 
 ## Results and Model Selection
-After training and evaluating multiple machine learning models, including `KNN`, `Decision Tree`, `SVC`, `Multinomial NB`, and `Gaussian NB`, we compared their performance based on key metrics:
+After training and evaluating multiple machine learning models, including `KNN`, `Decision Tree`, `SVC`, `Multinomial NB`, `Gaussian NB` and `XGBoost`, we compared their performance based on key metrics:
 
 - Accuracy
 - AUC Score
@@ -77,7 +78,7 @@ We can compare the *confusion matrix* of all the models:
 
 The best model based on *Recall* for this problem is `SVC` with an *AUC* of 1.00, *Accuracy* of 97.37%, *Precision* of 97.62%, *Recall* of 95.35%, and *F1-Score* of 96.47%.
 
-After evaluating the models `KNN`, `Decision Tree`, `SVC`, `Multinomial NB`, `Gaussian NB`, we concluded that the `SVC` model demonstrates the best performance in terms of *Recall*, which is crucial for cancer diagnosis. **High recall** ensures that we **minimize the false negatives**, thereby **reducing the risk of missing out on identifying patients who have cancer**.
+After evaluating the models `KNN`, `Decision Tree`, `SVC`, `Multinomial NB`, `Gaussian NB` and `XGBoost`, we concluded that the `SVC` model demonstrates the best performance in terms of *Recall*, which is crucial for cancer diagnosis. **High recall** ensures that we **minimize the false negatives**, thereby **reducing the risk of missing out on identifying patients who have cancer**.
 
 For a detailed analysis and comparison of models, refer to the Jupyter Notebook or Python script in this repository.
 
